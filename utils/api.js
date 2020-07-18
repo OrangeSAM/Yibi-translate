@@ -21,12 +21,21 @@ function translate(q, { from = 'auto', to = 'auto' } = { from: 'auto', to: 'auto
         if (res.data && res.data.trans_result) {
           resolve(res.data)
         } else {
-          reject({ status: 'error', msg: '翻译失败' })
-          wx.showToast({
-            title: '翻译失败',
-            icon: 'none',
-            duration: 3000
-          })
+          console.log(res.data.error_code)
+          console.log(res.data.error_code == '54003')
+          console.log(res.data.error_code == 54003)
+          if (res.data.error_code === '54003') {
+            resolve('')
+            console.log(1)
+          } else {
+            console.log(2)
+            reject({ status: 'error', msg: '翻译失败' })
+            wx.showToast({
+              title: '翻译失败',
+              icon: 'none',
+              duration: 3000
+            })
+          }
         }
       },
       fail() {
