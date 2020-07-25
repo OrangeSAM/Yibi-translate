@@ -5,10 +5,10 @@ const app = getApp()
 
 Page({
   data: {
-    query: '',
-    hideClearIcon: true,
-    result: [],
-    curLang: {}
+    query: '',// 查询内容
+    hideClearIcon: true,// 是否隐藏清楚icon
+    result: [],// 查询结果
+    curLang: {}// 当前目标语言
   },
   onLoad: function( options) {
     console.log('lonload..')

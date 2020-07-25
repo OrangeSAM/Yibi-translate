@@ -23,8 +23,8 @@ App({
         "index": 2
       },
       {
-        'chs': '韩语',
-        'lang': 'kor',
+        'chs': '泰语',
+        'lang': 'th',
         "index": 3
       },
       {
