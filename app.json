@@ -6,10 +6,11 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
     "navigationBarBackgroundColor": "#1c1b21",
     "navigationBarTitleText": "一笔译",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "red"
+    "backgroundColor": "lightgray"
   },
   "tabBar": {
     "borderStyle": "white",
