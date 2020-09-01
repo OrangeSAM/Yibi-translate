@@ -11,8 +11,6 @@ Page({
     curLang: {}// 当前目标语言
   },
   onLoad: function( options) {
-    console.log('lonload..')
-    console.log(options)
     if(options.query) {
       this.setData({ query: options.query })
     }
@@ -32,8 +30,6 @@ Page({
     }else{
       this.setData({ 'hideClearIcon': true })
     }
-    
-    console.log('focus')
   },
   onTapClose: function() {
     this.setData({ query: '', hideClearIcon: true})
